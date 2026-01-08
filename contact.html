@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshu - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Starry Background -->
+  <canvas id="galaxy"></canvas>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p id="email"></p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="emailInput" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMsg" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

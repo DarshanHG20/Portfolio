@@ -1,0 +1,198 @@
+/* =====================
+   GENERAL STYLES
+===================== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0b0c1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+    background: rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* =====================
+   LOGIN PAGE
+===================== */
+.login-container {
+    width: 300px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.login-container input,
+.login-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-container button {
+    background: #00ffcc;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+/* =====================
+   PROFILE SECTION
+===================== */
+.profile, .about-profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00ffcc;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00ffcc;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #00bfa0;
+}
+
+/* =====================
+   CARDS
+===================== */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(0, 255, 204, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 255, 204, 0.2);
+}
+
+/* =====================
+   CONTACT FORM
+===================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #00ffcc;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #00bfa0;
+}
+
+.success {
+    color: #00ffcc;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* =====================
+   STAR CANVAS
+===================== */
+#galaxy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}

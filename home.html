@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshu - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Starry Background -->
+  <canvas id="galaxy"></canvas>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <img src="port.jpg" alt="Darshu" class="profile-pic">
+    <h1 id="name"></h1>
+    <h3 id="title"></h3>
+    <p id="tagline"></p>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <h2>About Me</h2>
+    <p id="introText"></p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div id="skills" class="cards-container"></div>
+  </section>
+
+  <!-- Projects Preview -->
+  <section class="projects-preview">
+    <h2>Featured Projects</h2>
+    <div id="projects" class="cards-container"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
